@@ -8,15 +8,29 @@ namespace Pr4V
 {
     public class Spring_session:Session
     {
-        public string Practic_name;
-        public int Practic_grade;
-        public void SetPractic_grade(int Grade)
+        
+        protected int Practic_grade;
+        protected String Practic_name;
+
+        public string _Practic_name
         {
-            if (Grade>=1&&Grade>=5)
-            {
-                Practic_grade = Grade;
+            get { return Practic_name; }
+            set { Practic_name = value; }
+        }
+
+
+        public int _Practic_grade
+        {
+            get { return Practic_grade; }
+            set {
+                if (value >= 1 && value >= 5)
+                {
+                    Practic_grade = value;
+                }
             }
         }
+
+        
         public override void PrintSession()
         {
             Console.WriteLine("Семестр = " + Semester + " |" +

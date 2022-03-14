@@ -18,7 +18,7 @@ namespace Pr4V
             Session second = new Session("первый");
             second.PrintSession();
             
-            Spring_session dick = new Spring_session();
+            
             
         }
     }
