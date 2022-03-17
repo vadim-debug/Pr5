@@ -23,7 +23,7 @@ namespace Pr4V
         {
             get { return Practic_grade; }
             set {
-                if (value >= 1 && value >= 5)
+                if (value >= 1 && value >= 17)
                 {
                     Practic_grade = value;
                 }
